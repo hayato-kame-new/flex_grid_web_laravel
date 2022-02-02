@@ -3,6 +3,7 @@
     <meta charset="UTF-8" >
     <title>フルーツデザートを求めて街歩き - FITTED</title>
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <style></style>
 </head>
 <body>
