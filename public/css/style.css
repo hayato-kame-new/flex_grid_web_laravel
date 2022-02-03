@@ -13,6 +13,34 @@ body {
 /* ヘッダーブロック */
 header {
     padding: 25px 15px;
+    color: #29abe2;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+ul {
+    list-style-type:none;
+    padding: 0;
+    color: #666;
+    font-size: 12px;
+    display: flex;
+    justify-content:center;
+}
+
+/* フレックスアイテムの最後だけはつけたくない */
+li:not(:last-child) {
+    margin-right: 20px;
 }
 
 /* コンテンツブロック */
@@ -54,5 +82,9 @@ time {
 footer {
     background-color: #6ac4eb;
     padding: 25px 15px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
 }
 
