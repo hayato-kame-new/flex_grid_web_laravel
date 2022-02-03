@@ -43,6 +43,10 @@
 
 </article>
 
+<aside>
+    <img src="{{ asset('images/foot.svg') }}">
+</aside>
+
 </div>
 
 <footer>
