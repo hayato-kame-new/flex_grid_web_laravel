@@ -6,8 +6,35 @@
     <style></style>
 </head>
 <body>
-    <h1>Index</h1>
-    <p>this is index page</p>
+
+<header>
+FITTED
+</header>
+
+<div>
+<!-- Webからのアクセスを許すには、public/storageからstorage/app/publicへシンボリックリンクを張る必要があります。 -->
+<article>
+<h1>フルーツデザートを求めて街歩き</h1>
+<figure>
+
+</figure>
+<p>街歩きをしているとお腹が空きます。そんな時におすすめなのがフルーツデザートです。</p>
+
+<p>果物は手軽に食べることができます。熱中症予防や疲労回復などの効果もあるので、
+    街歩きのエネルギー補給にピッタリです。</p>
+
+<p>最近はふらっと立ち寄れるフルーツ専門店も増えてきました。珍しい南国フルーツのプレートや、
+    その場で作ってくれるフレッシュジュースも美味しくてやみつきになります。</p>
+
+</article>
+
+</div>
+
+<footer>
+©︎FITTED
+</footer>
+
+
 </body>
 
 </html>
