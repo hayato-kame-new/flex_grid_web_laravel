@@ -151,6 +151,67 @@ footer {
     font-family: 'Exo 2', sans-serif;
 }
 
+/* トップページ ヒーローイメージ    top */
+.hero {
+    background-image: url(../images/walk.jpg);
+    background-size: cover;
+    height: 532px;
+    background-position: center;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Exo 2', sans-serif;
+    text-shadow: 0 0 10px #444;
+}
+
+.hero p {
+    font-weight: bold;
+    text-shadow: 0 0 10px #444;
+    margin-top: 0;
+}
+
+.hero a {
+    border: 2px solid #fff;
+    padding: 10px 40px;
+    background-color: rgba(41,171,226, 0.7);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.toppost {
+    padding: 15px;
+}
+
+.toppost div {  /* モバイルの時には divでCSSをつけます */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.toppost article {
+    padding: 0;
+    width: 48%;  /* これだけでは効かない */
+    flex: none;  /* これで flex-shrink が ０になるので width  が効くようになる */
+}
+
+.toppost article:not(:nth-last-child(-n+2)) {
+    margin-bottom: 12px;
+}
+
+.toppost h3 {
+    margin: 0;
+    font-size: 14px;
+}
+
 /* =========================== PC 版 ===================================*/
 @media (min-width: 600px) {
     /* PC版: コンテナ */
@@ -177,6 +238,21 @@ footer {
     p {
         font-size: 18px;
     }
+    /* PC版: トップページ  ヒーローイメージ top */
+    .hero h1 {
+        font-size: 72px;
+    }
+    /* PC版: トップページ  トップページ記事 top */
+    .toppost article
+    {
+        width: 23%;
+    }
+
+    .toppost article:not(:nth-last-child(-n+2)) {
+        /* 0で上書き */
+        margin-bottom: 0;
+    }
+
 }
 /* =========================== PC 版 ここまで===================================*/
 

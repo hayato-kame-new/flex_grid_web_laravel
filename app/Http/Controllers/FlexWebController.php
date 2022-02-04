@@ -10,4 +10,9 @@ class FlexWebController extends Controller
     {
         return view('flexweb.post01');
     }
+
+    public function index()
+    {
+        return view('flexweb.index');
+    }
 }
