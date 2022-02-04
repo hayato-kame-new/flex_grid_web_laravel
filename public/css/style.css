@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+
+/* テキストの自動拡大を無効化 */
+body {
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
 html * {
     outline: solid red 1px;
 }
@@ -29,7 +36,7 @@ a:hover {
     opacity: 0.7;
 }
 
-ul {
+nav ul {
     list-style-type:none;
     padding: 0;
     color: #666;
@@ -38,13 +45,14 @@ ul {
     justify-content:center;
 }
 
-/* フレックスアイテムの最後だけはつけたくない */
-li:not(:last-child) {
+
+nav li:not(:last-child) {
+    /* フレックスアイテムの最後だけはつけたくない */
     margin-right: 20px;
 }
 
 /* コンテンツブロック */
-div {
+.contents {
     background-color: #29abe2;
     padding: 40px 15px;
 }
@@ -78,6 +86,61 @@ time {
     display: block;
 }
 
+/* サブメニュー */
+aside {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+h2 {
+    color: #29abe2;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+/* サブメニュー プロフィール */
+.profile figure {
+    text-align: center;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.profile p {
+    text-align: center;
+    font-size: 14px;
+}
+
+/* サブメニュー トッピックス */
+.topics ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.topics a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.topics figure {
+    width: 100px;
+    flex: none;
+}
+
+.topics h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+.topics img {
+    vertical-align: bottom;
+}
+
 /* フッター */
 footer {
     background-color: #6ac4eb;
@@ -88,3 +151,61 @@ footer {
     font-family: 'Exo 2', sans-serif;
 }
 
+/* =========================== PC 版 ===================================*/
+@media (min-width: 600px) {
+    /* PC版: コンテナ */
+    .container {
+        max-width: 800px;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+    /* PC版: ヘッダーのコンテナ */
+    header .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* PC版: 記事 */
+    article {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    h1  {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+/* =========================== PC 版 ここまで===================================*/
+
+/* ~~~~~~~~~~~~~~~~~~~~~~  PC 版 (大) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media (min-width: 1025px) {
+
+    /* PC版(大): コンテナ 外側のdiv  */
+    .container {
+        max-width: 1180px;
+    }
+
+    /* PC版(大): コンテナ うち側のdiv  */
+    .contents .container {
+        display :flex;
+        justify-content: space-between;
+    }
+
+    /* PC版（大): 記事 */
+    article {
+        width: 68%;
+        box-sizing: border-box;
+    }
+
+    .sub {
+        width: 28%;
+    }
+
+    .profile {
+        margin-top: 0;
+    }
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~   PC 版 (大) ここまで ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
