@@ -15,4 +15,14 @@ class FlexWebController extends Controller
     {
         return view('flexweb.index');
     }
+
+    public function about()
+    {
+        return view('flexweb.about');
+    }
+
+    public function contact()
+    {
+        return view('flexweb.contact');
+    }
 }
