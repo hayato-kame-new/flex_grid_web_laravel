@@ -22,3 +22,5 @@ Route::get('/', function () {
 Route::get('/hello', [HelloController::class, 'index']);
 Route::get('/flexweb/post01', [FlexWebController::class, 'post01'])->name('flexweb.post01');
 Route::get('/flexweb/', [FlexWebController::class, 'index']);
+Route::get('/flexweb/about', [FlexWebController::class, 'about'])->name('flexweb.about');
+Route::get('/flexweb/contact', [FlexWebController::class, 'contact'])->name('flexweb.contact');
