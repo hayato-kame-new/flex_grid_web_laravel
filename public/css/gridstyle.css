@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+
+/* テキストの自動拡大を無効化 */
+body {
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+html * {
+    outline: solid red 1px;
+}
+
+/*  ページ全体の設定  */
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
