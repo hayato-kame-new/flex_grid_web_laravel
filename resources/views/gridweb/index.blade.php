@@ -21,13 +21,16 @@
     </ul>
 </nav>
 
-<figure>
+<figure class="hero">
     <img src="{{ asset('gridimages/room.jpg') }}" alt="快適な室内空間" />
 </figure>
 
 <h1>Best place to visit in the world</h1>
 
-<p><a href="#">空間を彩る多彩なアイテム</a></p>
+<p>
+    <img src="{{ asset('gridimages/circle.svg') }}" alt="" /><br />
+    <a href="#">空間を彩る多彩なアイテム</a>
+</p>
 
 <section>
     <article>
