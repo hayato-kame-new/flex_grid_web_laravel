@@ -4,7 +4,12 @@
     <title>MENU - cafe</title>
     <meta name="viewport" content="width=device-width">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/sotechstyle.css') }}">
+    {{-- ファビコンの設定  --}}
+    <link rel="shortcut icon" href="{{ asset('sotechimages/favicon.ico') }}">
+    {{-- スマートフォンのタッチアイコン --}}
+    <link rel="apple-touch-icon" href="{{ asset('sotechimages/apple-touch-icon.png') }}">
+    <style></style>
     <style></style>
 </head>
 <body>

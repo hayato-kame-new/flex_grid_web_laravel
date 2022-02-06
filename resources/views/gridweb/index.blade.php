@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width">
 
     <link rel="stylesheet" href="{{ asset('css/gridstyle.css') }}" >
+    {{-- ファビコンの設定  --}}
+    <link rel="shortcut icon" href="{{ asset('sotechimages/favicon.ico') }}">
+    {{-- スマートフォンのタッチアイコン --}}
+    <link rel="apple-touch-icon" href="{{ asset('sotechimages/apple-touch-icon.png') }}">
 </head>
 <body>
 
