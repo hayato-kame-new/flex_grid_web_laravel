@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>WAVE</title>
     <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="{{ asset('css/gridstyle.css') }}" >
 </head>
 <body>
 
