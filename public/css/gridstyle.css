@@ -33,6 +33,7 @@ body {
         [foot] 100px;
     grid-row-gap: 20px;
     row-gap: 20px;
+    font-family: sans-serif;
 }
 
 body > * {
@@ -41,22 +42,85 @@ body > * {
 
 header {
     grid-row: head;
+    justify-self: center;
+    align-self: center;
+    font-size: 40px;
+    color: #555d6b;
 }
-
+/* ナビゲーションメニュー */
 nav {
     grid-row: head;
+    justify-self: center;
+    align-self: end;
 }
 
-figure { /* ヒーローイメージ */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 20px;
+    column-gap: 20px;
+}
+
+nav a {
+    color: #666;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ef9504;
+}
+
+figure.hero { /* ヒーローイメージ */
     grid-column: 1 / -1;
     grid-row: title / span 2;
 }
 
+figure.hero img {
+    height: 547px;
+    object-fit: cover;
+    vertical-align: bottom;
+    filter: brightness(70%);
+    z-index: -1;
+    position: relative; /* Edge用の設定 */
+}
+
 h1 {
     grid-row: title;
+    justify-self: center;
+    align-self: center;
+
+    color: #fff;
+    font-weight: normal;
+    line-height: 1.2;
+    text-shadow: 0 0 5px #444;
+    text-align: center;
 }
 p {
     grid-row: sub;
+    text-align: center;
+}
+
+p a {
+    color:#fff;
+    text-decoration: none;
+    border: 1px #fff solid;
+    padding: 10px 40px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    background-color: rgba(85, 93, 107, 0.5);
+}
+
+p a:hover {
+    background-color: #ef9504;
+}
+
+p img {
+    width: 250px;
 }
 
 section {
