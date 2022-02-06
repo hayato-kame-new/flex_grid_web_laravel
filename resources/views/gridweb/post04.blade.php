@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>WAVE</title>
     <meta name="viewport" content="width=device-width">
+
+    {{-- ファビコンの設定  --}}
+    <link rel="shortcut icon" href="{{ asset('sotechimages/favicon.ico') }}">
+    {{-- スマートフォンのタッチアイコン --}}
+    <link rel="apple-touch-icon" href="{{ asset('sotechimages/apple-touch-icon.png') }}">
 </head>
 <body>
 

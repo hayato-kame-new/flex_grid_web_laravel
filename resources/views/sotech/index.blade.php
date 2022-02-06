@@ -7,10 +7,14 @@
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" >
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/sotechstyle.css') }}">
+    {{-- ファビコンの設定  --}}
+    <link rel="shortcut icon" href="{{ asset('sotechimages/favicon.ico') }}">
+    {{-- スマートフォンのタッチアイコン --}}
+    <link rel="apple-touch-icon" href="{{ asset('sotechimages/apple-touch-icon.png') }}">
     <style></style>
 </head>
 <body>
-ソーテックです
+
 <header>
     {{-- aタグの中には何の要素でも入れられるようになりました --}}
     <a href="index.html"><h1><img src="{{ asset('sotechimages/logo.svg') }}" alt="ロゴ"></h1></a>
@@ -32,16 +36,28 @@
         </nav>
     </div>
 
-    <section class="hero">
-        <h1>Your Healthy Lifestyle</h1>
-
-        <p>理想的なライフスタイルを作り出す</p>
-
-        <a href="#">街歩きからはじめてみる</a>
-
+    <section>
+        <a href="{{ route('sotech.menu') }} ">
+            <img src="{{ asset('sotechimages/bg_menu.jpg') }}" alt="メニュー画像">
+            <h2>MENU</h2>
+        </a>
+    </section>
+    <section>
+        <a href="{{ route('sotech.access') }}">
+            <img src="{{ asset('sotechimages/bg_access.jpg') }}" alt="アクセス画像">
+            <h2>ACCESS</h2>
+        </a>
     </section>
 
-    <section class="toppost">
+    <section>
+        <a href="{{ route('sotech.contact') }}">
+            <h2>CONTACT</h2>
+            お問い合わせはこちら
+        </a>
+    </section>
+
+
+    {{-- <section class="toppost">
         <h2>TOPICS</h2>
 
         <div class="container">
@@ -86,7 +102,7 @@
                 </a>
             </article>
         </div>
-    </section>
+    </section> --}}
 
 </div>
     <footer>
