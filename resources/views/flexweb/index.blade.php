@@ -14,9 +14,9 @@
         <a href="index.html">FITTED</a>
         <nav>
             <ul>
-                <li><a href="index.html">トップ</a></li>
-                <li><a href="about.html">サイトについて</a></li>
-                <li><a href="contat.html">お問合わせ</a></li>
+                <li><a href="{{ route('flexweb.index') }}">トップ</a></li>
+                <li><a href="{{ route('flexweb.about') }}">サイトについて</a></li>
+                <li><a href="{{ route('flexweb.contact') }}">お問合わせ</a></li>
             </ul>
         </nav>
     </div>

@@ -1,22 +1,22 @@
 <html>
 <head>
     <meta charset="UTF-8" >
-    <title>フルーツデザートを求めて街歩き - FITTED</title>
+    <title>MENU - cafe</title>
     <meta name="viewport" content="width=device-width">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <style></style>
 </head>
 <body>
-
+MENUページ
 <header>
     <div class="container">
         <a href="index.html">FITTED</a>
         <nav>
             <ul>
-                <li><a href="{{ route('flexweb.index') }}">トップ</a></li>
-                <li><a href="{{ route('flexweb.about') }}">サイトについて</a></li>
-                <li><a href="{{ route('flexweb.contact') }}">お問合わせ</a></li>
+                <li><a href="index.html">トップ</a></li>
+                <li><a href="about.html">サイトについて</a></li>
+                <li><a href="contat.html">お問合わせ</a></li>
             </ul>
         </nav>
     </div>
