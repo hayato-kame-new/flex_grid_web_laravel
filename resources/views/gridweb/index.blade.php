@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>WAVE</title>
     <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ asset('css/gridstyle.css') }}" >
     {{-- ファビコンの設定  --}}
@@ -11,6 +12,8 @@
     {{-- スマートフォンのタッチアイコン --}}
     <link rel="apple-touch-icon" href="{{ asset('sotechimages/apple-touch-icon.png') }}">
 </head>
+
+{{-- bodyをグリッドコンテナにする --}}
 <body>
 
 <header>
@@ -18,10 +21,11 @@
 </header>
 
 <nav>
+    {{-- ulをグリッドコンテナにする --}}
     <ul>
         <li><a href="{{ route('gridweb.index') }}">トップ</a></li>
-        <li><a href="">サイトについて</a></li>
-        <li><a href="">お問合せ</a></li>
+        <li><a href="{{ route('gridweb.index') }}">サイトについて</a></li>
+        <li><a href="{{ route('gridweb.index') }}">お問合せ</a></li>
     </ul>
 </nav>
 
@@ -36,13 +40,15 @@
     <a href="#">空間を彩る多彩なアイテム</a>
 </p>
 
+{{-- sectionをグリッドコンテナにする --}}
 <section>
+    <h2>RECENT POSTS</h2>
     <article>
         <a href="{{ route('gridweb.post01') }}">
             <figure>
                 <img src="{{ asset('gridimages/note.jpg') }}" alt="" />
             </figure>
-            <h2>スケッチが楽しくなるノート</h2>
+            <h3>スケッチが楽しくなるノート</h3>
         </a>
     </article>
     <article>
@@ -50,7 +56,7 @@
             <figure>
                 <img src="{{ asset('gridimages/plant.jpg') }}" alt="" />
             </figure>
-            <h2>緑のアクセントならこれ</h2>
+            <h3>緑のアクセントならこれ</h3>
         </a>
     </article>
     <article>
@@ -58,7 +64,7 @@
             <figure>
                 <img src="{{ asset('gridimages/items.jpg') }}" alt="" />
             </figure>
-            <h2>小物と飾り棚の組み合わせ</h2>
+            <h3>小物と飾り棚の組み合わせ</h3>
         </a>
     </article>
     <article>
@@ -66,7 +72,7 @@
             <figure>
                 <img src="{{ asset('gridimages/chair.jpg') }}" alt="" />
             </figure>
-            <h2>居心地のいい部屋にあるもの</h2>
+            <h3>居心地のいい部屋にあるもの</h3>
         </a>
     </article>
 </section>
