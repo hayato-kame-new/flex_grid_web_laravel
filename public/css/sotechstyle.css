@@ -12,9 +12,71 @@ html * {
 }
 
 /*  ページ全体の設定  */
-* {
+body {
     margin: 0;
+    font-family: sans-serif;
+}
 
+/* ヘッダーブロック */
+header {
+    padding: 25px 15px;
+    color: #29abe2;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    background-image: url('../sotechimages/hero_top.jpg');
+    height: 375px;
+}
+header h1 {
+    width: 60px;
+    height: auro;
+    background-color: #fff;
+
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+nav ul {
+    list-style-type:none;
+    padding: 0;
+    color: #666;
+    font-size: 12px;
+    display: flex;
+    justify-content:center;
+}
+
+
+nav li:not(:last-child) {
+    /* フレックスアイテムの最後だけはつけたくない */
+    margin-right: 20px;
+}
+
+/* コンテンツブロック */
+.contents {
+    background-color: #29abe2;
+    padding: 40px 15px;
+}
+
+/* 記事 */
+article {
+    background-color: #fff;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p {
+     line-height: 2;
 }
 
 img {
@@ -22,111 +84,263 @@ img {
     height: auto;
 }
 
-body {
-    display: grid;
-    grid-template-columns: 20px 1fr 20px;
-    grid-template-rows:
-        [head] 100px
-        [title] auto
-        [sub] auto
-        [recent] auto
-        [foot] 100px;
-    grid-row-gap: 20px;
-    row-gap: 20px;
-    font-family: sans-serif;
+figure {
+    margin: 0;
 }
 
-body > * {
-    grid-column: 2 / -2;
+time {
+    color: #666;
+    margin-bottom: 15px;
+    display: block;
 }
 
-header {
-    grid-row: head;
-    justify-self: center;
-    align-self: center;
-    font-size: 40px;
-    color: #555d6b;
-}
-/* ナビゲーションメニュー */
-nav {
-    grid-row: head;
-    justify-self: center;
-    align-self: end;
+/* サブメニュー */
+aside {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 40px;
 }
 
-nav ul {
+h2 {
+    color: #29abe2;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+/* サブメニュー プロフィール */
+.profile figure {
+    text-align: center;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.profile p {
+    text-align: center;
+    font-size: 14px;
+}
+
+/* サブメニュー トッピックス */
+.topics ul {
     list-style-type: none;
     padding: 0;
-    display: grid;
-    grid-auto-flow: column;
-    grid-column-gap: 20px;
-    column-gap: 20px;
 }
 
-nav a {
-    color: #666;
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: bold;
+.topics a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-nav a:hover {
-    color: #ef9504;
+.topics figure {
+    width: 100px;
+    flex: none;
 }
 
-figure.hero { /* ヒーローイメージ */
-    grid-column: 1 / -1;
-    grid-row: title / span 2;
+.topics h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
 }
 
-figure.hero img {
-    height: 547px;
-    object-fit: cover;
+.topics img {
     vertical-align: bottom;
-    filter: brightness(70%);
-    z-index: -1;
-    position: relative; /* Edge用の設定 */
 }
 
-h1 {
-    grid-row: title;
-    justify-self: center;
-    align-self: center;
-
-    color: #fff;
-    font-weight: normal;
-    line-height: 1.2;
-    text-shadow: 0 0 5px #444;
-    text-align: center;
-}
-p {
-    grid-row: sub;
-    text-align: center;
-}
-
-p a {
-    color:#fff;
-    text-decoration: none;
-    border: 1px #fff solid;
-    padding: 10px 40px;
-    border-radius: 10px;
-    display: inline-block;
-    margin-top: 10px;
-    background-color: rgba(85, 93, 107, 0.5);
-}
-
-p a:hover {
-    background-color: #ef9504;
-}
-
-p img {
-    width: 250px;
-}
-
-section {
-    grid-row: recent;
-}
-
+/* フッター */
 footer {
-    grid-row: foot;
+    background-color: #6ac4eb;
+    padding: 25px 15px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
 }
+
+/* トップページ ヒーローイメージ    top */
+.hero {
+    background-image: url(../images/walk.jpg);
+    background-size: cover;
+    height: 532px;
+    background-position: center;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Exo 2', sans-serif;
+    text-shadow: 0 0 10px #444;
+}
+
+.hero p {
+    font-weight: bold;
+    text-shadow: 0 0 10px #444;
+    margin-top: 0;
+}
+
+.hero a {
+    border: 2px solid #fff;
+    padding: 10px 40px;
+    background-color: rgba(41,171,226, 0.7);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.toppost {
+    padding: 15px;
+}
+
+.toppost div {  /* モバイルの時には divでCSSをつけます */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.toppost article {
+    padding: 0;
+    width: 48%;  /* これだけでは効かない */
+    flex: none;  /* これで flex-shrink が ０になるので width  が効くようになる */
+}
+
+.toppost article:not(:nth-last-child(-n+2)) {
+    margin-bottom: 12px;
+}
+
+.toppost h3 {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* aboutページ  */
+
+table {
+    border-collapse : collapse;
+}
+th, td {
+    border: solid 1px #ccc;
+    padding: 18px;
+}
+th {
+    width: 4em;
+    text-align: left;
+    background-color: #135977;
+    color: #fff;
+}
+td {
+    background-color: #e8eef9;
+}
+/* お問合せページ */
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+textarea {
+    height: 120px;
+}
+
+input[type="submit"] {
+    background-color: #ffaa00;
+    border: none;
+    -webkit-appearance: none;
+}
+
+/* =========================== PC 版 ===================================*/
+@media (min-width: 600px) {
+    /* PC版: コンテナ */
+    .container {
+
+        max-width: 800px;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+    /* PC版: ヘッダーのコンテナ */
+    header .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* PC版: 記事 */
+    article {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    h1  {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+    /* PC版: トップページ  ヒーローイメージ top */
+    .hero h1 {
+        font-size: 72px;
+    }
+    /* PC版: トップページ  トップページ記事 top */
+    .toppost article
+    {
+        width: 23%;
+    }
+
+    .toppost article:not(:nth-last-child(-n+2)) {
+        /* 0で上書き */
+        margin-bottom: 0;
+    }
+     /* PC版: お問合せページ ボタン */
+     input[type="submit"] {
+         width: 250px;
+     }
+
+}
+/* =========================== PC 版 ここまで===================================*/
+
+/* ~~~~~~~~~~~~~~~~~~~~~~  PC 版 (大) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media (min-width: 1025px) {
+
+    /* PC版(大): コンテナ 外側のdiv  */
+    .container {
+        max-width: 1180px;
+
+    }
+
+    /* PC版(大): コンテナ うち側のdiv  */
+    .contents .container {
+        display :flex;
+        justify-content: space-between;
+
+    }
+     /* PC版(大): コンテナ うち側のdiv  */
+
+    /* PC版（大): 記事 */
+    article {
+        width: 68%;
+        box-sizing: border-box;
+
+    }
+
+    .sub {
+        width: 28%;
+    }
+
+    .profile {
+        margin-top: 0;
+    }
+
+    .about_article
+    {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~   PC 版 (大) ここまで ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

@@ -47,7 +47,7 @@
 </div>
 
 <footer>
-©︎FITTED
+    &copy; SPACE CAFE
 </footer>
 
 {{-- <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script> --}}
